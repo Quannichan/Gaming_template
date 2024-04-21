@@ -1,0 +1,380 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/BWD/WEB_DESIGN/css/store.css">
+    <link rel="shortcut icon" href="/BWD/WEB_DESIGN/images/icon_small.png">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Kanit:wght@300&display=swap" 
+    rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Bruno+Ace+SC&display=swap" rel="stylesheet">
+    <title>GAME STATION | Store</title>
+   <script src='https://kit.fontawesome.com/a076d05399.js' crossorigin='anonymous' type="script"></script>
+   <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css" />
+   <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Chakra+Petch:wght@400;500&family=Space+Grotesk:wght@300;400&display=swap" rel="stylesheet">
+   <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+</head>
+<body>
+            <div class="Menu_wrap1" id="Menu_wrap1">
+                <a href="/BWD/WEB_DESIGN/index.html"><img class="image" src="/BWD/WEB_DESIGN/images/icon_big.png" width="270" height="40"/></a>
+                <ul>
+                    <li><a onclick="window.location.href='/BWD/WEB_DESIGN/html/store.html'">STORE</a></li>
+                    <li>ABOUT US
+                        <div class="menu_down1" id="Menu_down">
+                            <ul>
+                                <li onclick="window.location.href='/BWD/WEB_DESIGN/html/About.html'">Our Shop</li>
+                                <li onclick="window.location.href='https://www.youtube.com/channel/UCpmEoalqMN5hqrZmKB4jsww'">Youtube</li>
+                                <li onclick="window.location.href='https://www.instagram.com/_mey_mey_1308/'">Instagram</li>
+                            </ul> 
+                        </div>
+                    </li>
+                    <li onclick="window.location.href='/BWD/WEB_DESIGN/html/Sup.html'">SUPPORT</li>
+                </ul>
+                <div class="menu_option_wrap">
+                <ul class="menu_option">
+                <li class="but_menu"><img class="menu_img" src="/BWD/WEB_DESIGN/images/menu-button-of-three-horizontal-lines.png" width="40px" height="30px">
+                    <div class="menu_down2">
+                        <ul class="menud2" >
+                            <li><img src="/BWD/WEB_DESIGN/images/user.png" width="20%">&nbsp&nbspAccount</li>
+                            <li><img src="/BWD/WEB_DESIGN/images/shopping-bag.png" width="20%" style="margin-top:-5px">&nbsp&nbspCart</li>
+                            <li onclick="window.location.href='/BWD/WEB_DESIGN/html/Login.html'"><img src="/BWD/WEB_DESIGN/images/exit.png" width="20%">&nbsp&nbspLog in</li>                        </ul>
+                    </div>
+                </li>
+                </ul>
+                </div>
+            </div>
+            <div class="welcome">
+                <video class="video_background" playsinline autoplay muted loop><source src="../videos/cyberpunk.mp4" type="video/mp4"> </video>
+                <div class="content">
+                    <div class="title">
+                        <p>GAME STATION</p>
+                    </div>
+                    <div class="line">
+                        <p>Hãy dạo quanh cửa hàng của chúng tôi và tìm những tựa game mà bạn yêu thích.<br>Cùng bắt đầu hành trình game của bạn ngay hôm nay!</p>
+                    </div>
+                    <div class="search">
+                        <input type="text" placeholder="Tìm kiếm tại đây..." >
+                        <a href="#">
+                            <i class='bx bx-search-alt'></i>
+                        </a> 
+                    </div>
+                </div>
+            </div>
+            <div class="store" id="store">
+                <div class="recommend_box">
+                  <div class="title"><h1>Recommend for you</h1><hr></div>
+                  <div class="box">
+                    <div class="cards">
+                      <div class="card">
+                        <img src="../images/img1.jpg" alt="" />
+                        <div class="card__content">
+                          <h1>Need for Speed:<br> Hot Pursuit</h1>
+                          <p>$35</p>
+                          <button class="cart"><i class='bx bx-cart'></i></button>
+                        </div>
+                      </div>
+                      <div class="card">
+                        <img src="../images/img2.jpg" alt="" />
+                        <div class="card__content">
+                          <h1>Need for Speed: Heat</h1><br>
+                          <p>$45</p>
+                          <button class="cart"><i class='bx bx-cart'></i></button>
+                        </div>
+                      </div>
+                      <div class="card">
+                        <img src="../images/img3.jpg" alt="" />
+                        <div class="card__content">
+                          <h1>Outlast 2</h1><br>
+                          <p>$30</p>
+                          <button class="cart"><i class='bx bx-cart'></i></button>
+                        </div>
+                      </div>
+                      <div class="card">
+                        <img src="../images/img4.jpg" alt="" />
+                        <div class="card__content">
+                          <h1>Resident Evil 2</h1><br>
+                          <p>$44
+                          </p>
+                          <button class="cart"><i class='bx bx-cart'></i></button>
+                        </div>
+                      </div>
+                      <div class="card">
+                        <img src="../images/img5.jpg" alt="" />
+                        <div class="card__content">
+                          <h1>Resident Evil 7: Biohazard</h1>
+                          <p>$44
+                          </p>
+                          <button class="cart"><i class='bx bx-cart'></i></button>
+                        </div>
+                      </div>
+                      <div class="card">
+                        <img src="../images/img6.jpg" alt="" />
+                        <div class="card__content">
+                          <h1>Watch Dogs: Legion</h1><br>
+                          <p>$45    </p>
+                          <button class="cart"><i class='bx bx-cart'></i></button>
+
+                        </div>
+                      </div>
+                      <div class="card">
+                        <img src="../images/img7.jpg" alt="" />
+                        <div class="card__content">
+                          <h1>Mortal Kombat 11</h1><br>
+                          <p>$32 </p>
+                          <button class="cart"><i class='bx bx-cart'></i></button>
+
+                        </div>
+                      </div>
+                      <div class="card">
+                        <img src="../images/img8.jpg" alt="" />
+                        <div class="card__content">
+                          <h1>Mass Effect Legendary Edition</h1>
+                          <p>$55
+                          </p>
+                          <button class="cart"><i class='bx bx-cart'></i></button>
+
+                        </div>
+                      </div>
+                      <div class="card">
+                        <img src="../images/img9.jpg" alt="" />
+                        <div class="card__content">
+                          <h1>Project Car 3</h1><br>
+                          <p>$80</p>
+                          <button class="cart"><i class='bx bx-cart'></i></button>
+                        </div>
+                      </div>
+                      <div class="card">
+                        <img src="../images/img10.jpg" alt="" />
+                        <div class="card__content">
+                          <h1>Call of Duty: Black Ops 4</h1><br>
+                          <p>$100
+                          </p>
+                          <button class="cart"><i class='bx bx-cart'></i></button>
+
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="store_box">
+                  <div class="title">
+                    <h1>Our store</h1><hr>
+                  </div>
+                  <div class="store_box_con">
+                    <input type="checkbox" id="btnBox">
+                    <div class="store_cards">
+                      <div class="card">
+                        <img src="../images/img11.jpg" alt="" />
+                        <div class="card__content">
+                          <h1>Death Stranding</h1>
+                          <p>$30</p>
+                          <button class="cart"><i class='bx bx-cart'></i></button>
+                        </div>
+                      </div>
+                      <div class="card">
+                        <img src="../images/img12.jpg" alt="" />
+                        <div class="card__content">
+                          <h1>World War Z</h1>
+                          <p>$45</p>
+                          <button class="cart"><i class='bx bx-cart'></i></button>
+                        </div>
+                      </div>
+                      <div class="card">
+                        <img src="../images/img13.jpg" alt="" />
+                        <div class="card__content">
+                          <h1>Cyberpunk 2077</h1>
+                          <p>$31</p>
+                          <button class="cart"><i class='bx bx-cart'></i></button>
+                        </div>
+                      </div>
+                      <div class="card">
+                        <img src="../images/img14.jpg" alt="" />
+                        <div class="card__content">
+                          <h1>Days Gone</h1>
+                          <p>$44</p>
+                          <button class="cart"><i class='bx bx-cart'></i></button>
+                        </div>
+                      </div>
+                      <div class="card">
+                        <img src="../images/img15.jpg" alt="" />
+                        <div class="card__content">
+                          <h1>The Last Of Us: Remastered</h1>
+                          <p>$44
+                          </p>
+                          <button class="cart"><i class='bx bx-cart'></i></button>
+                        </div>
+                      </div>
+                      <div class="card">
+                        <img src="../images/img16.jpg" alt="" />
+                        <div class="card__content">
+                          <h1>The Last Of Us Part II</h1>
+                          <p>$45    </p>
+                          <button class="cart"><i class='bx bx-cart'></i></button>
+
+                        </div>
+                      </div>
+                      <div class="card">
+                        <img src="../images/img17.jpg" alt="" />
+                        <div class="card__content">
+                          <h1>DOOM Eternal</h1>
+                          <p>$32 </p>
+                          <button class="cart"><i class='bx bx-cart'></i></button>
+
+                        </div>
+                      </div>
+                      <div class="card">
+                        <img src="../images/img18.jpg" alt="" />
+                        <div class="card__content">
+                          <h1>Hit Man 2</h1>
+                          <p>$55
+                          </p>
+                          <button class="cart"><i class='bx bx-cart'></i></button>
+
+                        </div>
+                      </div>
+                      <div class="card">
+                        <img src="../images/img19.jpg" alt="" />
+                        <div class="card__content">
+                          <h1>Shadow Of The Tomb Raider</h1>
+                          <p>$80</p>
+                          <button class="cart"><i class='bx bx-cart'></i></button>
+                        </div>
+                      </div>
+                      <div class="card">
+                        <img src="../images/img20.jpg" alt="" />
+                        <div class="card__content">
+                          <h1>Final Fantasy 7 Remake</h1>
+                          <p>$40
+                          </p>
+                          <button class="cart"><i class='bx bx-cart'></i></button>
+                        </div>
+                      </div>
+                      <div class="card">
+                        <img src="../images/img1.jpg" alt="" />
+                        <div class="card__content">
+                          <h1>Need for Speed: Hot Pursuit</h1>
+                          <p>$35</p>
+                          <button class="cart"><i class='bx bx-cart'></i></button>
+                        </div>
+                      </div>
+                      <div class="card">
+                        <img src="../images/img2.jpg" alt="" />
+                        <div class="card__content">
+                          <h1>Need for Speed: Heat</h1>
+                          <p>$45</p>
+                          <button class="cart"><i class='bx bx-cart'></i></button>
+                        </div>
+                      </div>
+                      <div class="card">
+                            <img src="../images/img3.jpg" alt="" />
+                            <div class="card__content">
+                              <h1>Outlast 2</h1>
+                              <p>$30</p>
+                              <button class="cart"><i class='bx bx-cart'></i></button>
+                            </div>
+                      </div>
+                          <div class="card">
+                            <img src="../images/img4.jpg" alt="" />
+                            <div class="card__content">
+                              <h1>Resident Evil 2</h1>
+                              <p>$44
+                              </p>
+                              <button class="cart"><i class='bx bx-cart'></i></button>
+                            </div>
+                          </div>
+                          <div class="card">
+                            <img src="../images/img5.jpg" alt="" />
+                            <div class="card__content">
+                              <h1>Resident Evil 7: Biohazard</h1>
+                              <p>$44
+                              </p>
+                              <button class="cart"><i class='bx bx-cart'></i></button>
+                            </div>
+                          </div>
+                          <div class="card">
+                            <img src="../images/img6.jpg" alt="" />
+                            <div class="card__content">
+                              <h1>Watch Dogs: Legion</h1>
+                              <p>$45    </p>
+                              <button class="cart"><i class='bx bx-cart'></i></button>
+    
+                            </div>
+                          </div>
+                          <div class="card">
+                            <img src="../images/img7.jpg" alt="" />
+                            <div class="card__content">
+                              <h1>Mortal Kombat 11</h1>                              <p>$32 </p>
+                              <button class="cart"><i class='bx bx-cart'></i></button>
+    
+                            </div>
+                          </div>
+                          <div class="card">
+                            <img src="../images/img8.jpg" alt="" />
+                            <div class="card__content">
+                              <h1>Mass Effect Legendary Edition</h1>
+                              <p>$55
+                              </p>
+                              <button class="cart"><i class='bx bx-cart'></i></button>
+    
+                            </div>
+                          </div>
+                          <div class="card">
+                            <img src="../images/img9.jpg" alt="" />
+                            <div class="card__content">
+                              <h1>Project Car 3</h1>
+                              <p>$80</p>
+                              <button class="cart"><i class='bx bx-cart'></i></button>
+                            </div>
+                          </div>
+                          <div class="card">
+                            <img src="../images/img10.jpg" alt="" />
+                            <div class="card__content">
+                              <h1>Call of Duty: Black Ops 4</h1>
+                              <p>$100
+                              </p>
+                              <button class="cart"><i class='bx bx-cart'></i></button>
+    
+                            </div>
+                          </div>
+                    </div>
+                    <label for="btnBox" class="btn1">Xem thêm...</label>
+                    <label for="btnBox" class="btn2">Thu gọn</label>
+                  </div>
+                </div>
+            </div>
+            <br><br>
+        <div class="wrap_footer">
+            <div class="footer">
+                <div class="logo_web">
+                    <img src="/BWD/WEB_DESIGN/images/icon_big.png" width="50%" onclick="window.location.href='/BWD/WEB_DESIGN/index.html' ">
+                </div>
+                <div class="contact_inf">
+                    <div>
+                    <h3 class="contact_head">CONTACT INFORMATION</h3><br>
+                    <p class="contact">Phone number :&nbsp<a class="link_ct" href="tel:0886523224">0886523224</a><br>Mail :&nbsp<a class="link_ct" href="mailto:tranminhquan130804@gmail.com">tranminhquan130804@gmail.com</a><br></p>
+                    </div>
+                    <div class="con1">
+                        <h3 class="contact_head">CONTACT INFORMATION</h3><br>
+                        <p class="contact">Address :&nbsp<a class="link_ct" href="https://goo.gl/maps/cGc6AnsjXbJJ61iW9?coh=178571&entry=tt" target="_blank">470 Trần Đại Nghĩa</a></p>
+                    </div>      
+                </div>
+                <div class="wrap_link_page">
+                  <a href="/BWD/WEB_DESIGN/index.html" class="link_to_page">Home</a><br>
+                  <a href="/BWD/WEB_DESIGN/html/About.html" class="link_to_page">About us</a><br>
+          <a href="/BWD/WEB_DESIGN/html/store.html" class="link_to_page">Store</a><br>
+                </div>
+            </div>
+        </div>
+
+            <script src="../scripts/store.js"></script>
+
+</body>
+
+</html>

@@ -1,0 +1,621 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+body{
+    font-family: 'Kanit', sans-serif;
+    background-color: black;
+    margin:0;
+    padding: 0;
+    border:0;
+    outline:0;
+    vertical-align: baseline;
+    box-sizing: border-box;
+}
+div{
+    display:block;
+}
+.Menu_wrap{
+    margin-top: 20%;
+    display: flex;
+    width: 100%;
+    height: 70px;
+    align-items: center;
+    background-color:black;
+    justify-items: center;
+    justify-content: center;
+    justify-content:space-between;
+    padding: 0 6%;
+    z-index: 1000;
+}
+
+.Menu_wrap1{
+    display: flex;
+    width: 100%;
+    height: 70px;
+    align-items: center;
+    background-color:black;
+    justify-items: center;
+    justify-content: center;
+    justify-content:space-between;
+    padding: 0 6%;
+    z-index: 1000;
+}
+.Menu_wrap1 ul{
+    list-style: none;
+    display: flex;
+    gap: 30px;
+    align-items: center;
+    flex-wrap: nowrap;
+}
+.Menu_wrap1 ul li{
+    list-style: none;
+    display: flex;
+    text-align: center;
+    font-size: 16px;
+    font-weight: bold;
+    cursor: pointer;
+    color: transparent;
+    font-family: 'Bruno Ace SC', cursive;
+    background-image: linear-gradient(to right,rgb(72, 72, 217), rgb(72, 72, 217) , rgb(214, 43, 43), #ef75f3, rgb(72, 72, 217),rgb(72, 72, 217)) ;
+    -webkit-background-size: 1000%;
+    -webkit-background-clip: text;
+    animation: animate 5s linear infinite;
+    transition: 0.75s;
+}
+.Menu_wrap1 ul li:hover{
+    color: white;
+    border-style: solid;
+    border-top: none;
+    border-left: none;
+    border-right: none;
+    border-color: white;
+    padding-bottom:23px;
+    margin-top: 23px;
+}
+.Menu_wrap1 ul li:hover .menu_down1{
+    top: 100%;
+    z-index: 0;
+}
+.Menu_wrap1 ul li:hover .menu_down1 ul{
+    opacity: 1;
+    z-index: 0;
+}
+.menu_down1{
+    position: absolute;
+    transform: translateX(-22px);
+    top:-60%;
+    transition: 0.75s;
+    z-index: 0;
+}
+.menu_down1 ul{
+    display: block;
+    opacity: 0;
+    color:white;
+    background-color: black ;
+    width: max-content;
+    padding: 7%;
+    transition: 0.25s;
+}
+.menu_down1 ul li{
+    color: white;
+    font-size: 20px;
+    padding: 5px;
+}
+.menu_down1 ul li:hover{
+    color: white;
+    padding-bottom:0;
+    margin-top: 0;
+    padding: 5px;
+    border-bottom: none;
+    color: blueviolet;
+}
+.but_menu{
+    height:35px;
+    width: 35px;
+    position: absolute;
+    right: 3% ;
+    background-color: transparent;
+    transition: 0.25s;
+    z-index: 1000;
+}
+.menu_img{
+    width: 100%;
+    height: 100%;
+    z-index: 100;
+}
+.menu_down2{
+    display: block;
+    position: absolute;
+    background-color: black;
+    opacity: 0;
+    top: -500%;
+    left: -200%;
+    width: 140px;
+    height: 135px;
+    justify-content: center;
+    border-radius: 10px;
+    transition: 0.75s;
+    z-index: 0;
+}
+.menu_down2 .menud2{
+    display: block;
+    list-style: none;
+    justify-content: center;
+}
+.menu_down2 .menud2 li{
+    padding:8%;
+    text-align: center;
+}
+.menu_option_wrap .menu_option .but_menu:hover{
+    border: none;
+    padding-bottom: 0;
+    margin-top:0;
+}
+.menu_option_wrap .menu_option .but_menu:hover .menu_down2{
+    top: 110%;
+    left: -200%;
+    opacity: 1;
+}
+.menu_option_wrap .menu_option .but_menu ul li:hover{
+    color: white;
+    border: none;
+    padding-bottom: 0;
+    margin-top:0px;
+    margin-bottom: 7px;
+}
+.Menu_wrap ul{
+    list-style: none;
+    display: flex;
+    gap: 30px;
+    align-items: center;
+    flex-wrap: nowrap;
+}
+.Menu_wrap ul li{
+    list-style: none;
+    display: flex;
+    text-align: center;
+    font-size: 16px;
+    font-weight: bold;
+    cursor: pointer;
+    color: transparent;
+    font-family: 'Bruno Ace SC', cursive;
+    background-image: linear-gradient(to right,rgb(72, 72, 217), rgb(72, 72, 217) , rgb(214, 43, 43), #ef75f3, rgb(72, 72, 217),rgb(72, 72, 217)) ;
+    -webkit-background-size: 1000%;
+    -webkit-background-clip: text;
+    animation: animate 5s linear infinite;
+    transition: 0.75s;
+}
+@keyframes animate{
+    0%{
+        background-position: 0 50%;
+    }
+    50%{
+        background-position: 50% 100%;
+    }
+    100%{
+        background-position: 100% 0%;
+    }
+
+}
+.Menu_wrap ul li:hover{
+    color: white;
+    border-style: solid;
+    border-top: none;
+    border-left: none;
+    border-right: none;
+    border-color: white;
+    padding-bottom:23px;
+    margin-top: 23px;
+}
+.Menu_wrap ul li:hover .menu_down{
+    top: 100%;
+    z-index: 0;
+}
+.Menu_wrap ul li:hover .menu_down ul{
+    opacity: 1;
+    z-index: 0;
+}
+.menu_down{
+    position: absolute;
+    transform: translateX(-22px);
+    top:-60%;
+    transition: 0.75s;
+    z-index: 0;
+}
+.menu_down ul{
+    display: block;
+    opacity: 0;
+    color:white;
+    background-color: black ;
+    width: max-content;
+    padding: 7%;
+    transition: 0.25s;
+}
+.menu_down ul li{
+    color: white;
+    font-size: 20px;
+    padding: 5px;
+}
+.menu_down ul li:hover{
+    color: white;
+    padding-bottom:0;
+    margin-top: 0;
+    padding: 5px;
+    border-bottom: none;
+    color: blueviolet;
+}
+.Menu_wrap,.Menu_wrap1
+{
+    position:relative;
+}
+
+#first_line,#last_line {
+    position: relative;
+    top: 0;
+    z-index: 3;
+    margin-top: 3.5%;
+    width:100%;
+}
+
+.first_line ,.last_line
+{
+    text-align: center;
+}
+
+.first_line,.last_line p{
+    font-family: 'Chakra Petch', sans-serif;
+    color:aliceblue;
+    font-size: calc(2em + 1vmin);
+    font-weight:bold;
+}
+#left_ct {
+    position: relative;
+    z-index: 2;
+    float: left;
+    width: 55%;
+    height: 400px;
+    margin-top: 4.75%;
+    background-image: url(../images/image1.jpg);
+    background-size: cover;
+    border-radius:1px ;
+    box-shadow: 5px 5px 10px rgba(144, 117, 152, 0.3);
+    margin-left:2.5%;
+}
+
+#right_ct {
+    position: relative;
+    z-index: 2;
+    float: right;
+    width: 40%;
+    height: 400px;
+    background:black;
+    margin-top:3.5%;
+    margin-right: 2.5%;
+
+}
+#box_right_ct {
+    position:absolute;
+    z-index: 1;
+    background:rgba(127, 113, 142, 0.82);
+    float: right;
+    width: 105%;
+    height: 55%;
+    margin-top:45%;
+    margin-left: -8%;
+    text-align: justify;
+}
+#box_right_ct p{
+    font-size: calc(0.75em + 1vmin);
+    margin: 3.5%;
+    color:#d4cbd4;
+    max-width: 600px;
+}
+
+#content2,#content3,#content4,#content5
+{
+    display:flex;
+    width:100%;
+    height:100%;
+}
+#left_ct2,#left_ct4 {
+    position: relative;
+    z-index: 2;
+    float: left;
+    width: 50%;
+    height: 400px;
+    margin-top: 7.5%;
+    margin-left:2.5%;
+}
+
+#right_ct2,#right_ct4 {
+    position: relative;
+    z-index: 1;
+    float: right;
+    width: 50%;
+    height: 400px;
+    background-size: cover;
+    border-radius:1px ;
+    box-shadow: 5px 5px 10px rgba(144, 117, 152, 0.3);
+    margin-top: 15%;
+    margin-right: 2.5%;
+
+}
+#right_ct2{
+    background-image: url(https://images.pushsquare.com/cf9ec4c52ce0c/would-you-pay-usd70-for-a-brand-new-ps5-game-poll-1.original.jpg);
+}
+#right_ct4
+{
+    background-image: url(../images/support.jpg);
+}
+
+#main_line {
+    position: absolute;
+    top: 0;
+    z-index: 3;
+    height: 10px;
+    margin-top: 40%;
+    width:100%;
+}
+.main_line
+{
+    font-family: 'Chakra Petch', sans-serif;
+    text-align: center;
+    color:aliceblue;
+    display:inline-block;
+}
+
+hr
+{
+    width: 70%;
+    margin-right:auto; 
+    margin-left:auto;
+    margin-top: 2.5%;
+    margin-bottom: 5px;
+    color: rgba(129, 125, 133, 0.596);
+}
+#paragraph_left {
+    position:absolute;
+    z-index: 1;
+    float: left;
+    width: 90%;
+    height: 55%;
+    margin-top:50%;
+    margin-left: 5%;
+    text-align: justify;
+}
+
+#paragraph_left p{
+    font-size: calc(0.75em + 1vmin);
+    margin: 4%;
+    color:#d4cbd4;
+    max-width: 600px;
+}
+#left_ct2 br{
+    display:none;
+}
+#left_ct3 {
+    position: relative;
+    z-index: 2;
+    float: left;
+    width: 50%;
+    height: 336px;
+    margin-top:15%;
+    overflow:initial;
+    background-size: cover;
+    box-shadow: 5px 5px 10px rgba(144, 117, 152, 0.3);
+    margin-left:2.5%;
+    align-items: center;
+    justify-content: center;
+}
+video{
+    position:absolute;
+    top:0;
+    left:0;
+    width:100%;
+    height:auto;
+}
+#right_ct3 {
+    position: relative;
+    z-index: 1;
+    float: right;
+    width: 50%;
+    height: 400px;
+    margin-top: -1.5%;
+    margin-right: 2.5%;
+
+}
+#paragraph_right {
+    position:absolute;
+    z-index: 1;
+    float: right;
+    width: 90%;
+    height: 55%;
+    margin-top:50%;
+    margin-left: 5%;
+    text-align: justify;
+}
+
+#paragraph_right p{
+    font-size: calc(0.75em + 1vmin);
+    margin: 4%;
+    color:#d4cbd4;
+    max-width: 600px;
+}
+
+@media only screen and (max-width: 1024px) 
+{
+    #first_line,#last_line{
+        margin:0 auto;
+        margin-top: 12.5%;
+        font-size: calc(1.5em + 1vmin);
+    }
+    #left_ct
+    {
+        margin-top:12.5%;
+        margin-bottom: 10%;
+    }
+    #box_right_ct {
+        margin-top: 80%;
+        margin-left: -10%;
+        margin-bottom:10%;
+        width: 100%;
+        height: 100%;
+    }
+    #box_right_ct p{
+        margin:5%;
+    }
+    #content2,#content4
+    {
+        margin-top:7.5%;
+    }
+    #right_ct2{
+        margin-top:25.5%;
+    }
+    #left_ct3
+    {
+        margin-top:25.5%;
+        height:278px;
+    }
+    #left_ct2 br{
+        display:none;
+    }
+}
+
+@media only screen and (max-width: 780px) 
+{
+    #first_line,#last_line{
+        margin:0 auto;
+        margin-top: 12.5%;
+    }
+    #left_ct
+    {
+        margin-top:20%;
+    }
+    #box_right_ct {
+        width: 100%;
+        height: 100%;
+    }
+    #box_right_ct p{
+        margin:3.5%;
+    }
+    #left_ct2 #main_line{
+        margin-top:22.5%;
+    }
+
+}
+@media only screen and (max-width: 480px) {
+    #first_line,#last_line{
+        margin:0 auto;
+        margin-top: 20.5%;
+        font-size: calc(1em + 1vmin);
+    }
+
+    #left_ct{
+        margin-top:21.5%;
+        margin-left:5% ;
+        background-position:center;
+        width:90%;
+    }
+
+    #box_right_ct {
+        float:left;
+        margin-left: -122.5%;
+        margin-top:auto;
+        width: 200%;
+        height:76.5%;
+    }
+    #box_right_ct p{
+        margin:6%;
+    }
+    #content2{
+        margin-top:23%;
+    }
+    #left_ct2{
+        margin-left:7%;
+        width:200%;
+        float:left;
+        height:76.5%;
+
+    }
+    #right_ct2 {
+        background-position:center;
+        margin-top:-140%;
+        width: 90%;
+    }
+    #content3{margin-top:30%;}
+}
+@keyframes anima{
+    0%{
+        background-position: 0 100%;
+    }
+    100%{
+        background-position: 100% 0%;
+    }
+
+}
+.wrap_footer{
+    background-color: white;
+    display: block;
+    padding: 5%;
+    justify-content:space-between;
+    align-items: center;
+    width: 100%;
+}
+.footer{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.contact_head{
+    font-weight: bold;
+    color:transparent;
+    background-image: linear-gradient(to right,rgb(72, 72, 217), rgb(72, 72, 217) , rgb(214, 43, 43), #ef75f3, rgb(72, 72, 217),rgb(72, 72, 217)) ;
+    -webkit-background-size: 1000%;
+    -webkit-background-clip: text;
+    animation: animate 5s linear infinite;
+    transition: 0.75s;
+    font-family: 'Bruno Ace SC', cursive;
+    text-shadow: 0px 0px 40px rgb(24, 72, 230);
+}
+
+.contact{
+    color: black;
+    font-size: 20px;
+}
+.logo_web{
+    margin-left: -100px;
+}
+.link_ct{
+    text-decoration: none;
+    color: black
+}
+.con1{
+    margin-top: 40px;
+}
+.contact_inf{
+    margin-left: -100px;
+    position: relative;
+    text-align: left;
+    width: 400px;
+    word-wrap: none;
+}
+.wrap_link_page{
+    text-align: left;
+    display: block;
+    width: 150px;
+}
+.link_to_page{
+    font-size: 20px;
+    text-decoration: none;
+    font-weight: bold;
+    color:transparent;
+    background-image: linear-gradient(to right,rgb(72, 72, 217), rgb(72, 72, 217) , rgb(214, 43, 43), #ef75f3, rgb(72, 72, 217),rgb(72, 72, 217)) ;
+    -webkit-background-size: 1000%;
+    -webkit-background-clip: text;
+    animation: animate 5s linear infinite;
+    transition: 0.75s;
+    font-family: 'Bruno Ace SC', cursive;
+    text-shadow: 0px 0px 40px rgb(24, 72, 230);
+}

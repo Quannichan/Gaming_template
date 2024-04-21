@@ -1,0 +1,1079 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+body{
+    font-family: 'Kanit', sans-serif;
+    background-color: black;
+}
+.Menu_wrap{
+    margin-top: 20%;
+    display: flex;
+    width: 100%;
+    height: 70px;
+    align-items: center;
+    background-color:black;
+    justify-items: center;
+    justify-content: center;
+    justify-content:space-between;
+    padding: 0 6%;
+    z-index: 1000;
+}
+
+.Menu_wrap1{
+    display: flex;
+    width: 100%;
+    height: 70px;
+    align-items: center;
+    background-color:black;
+    justify-items: center;
+    justify-content: center;
+    justify-content:space-between;
+    padding: 0 6%;
+    z-index: 1000;
+}
+.Menu_wrap1 ul{
+    list-style: none;
+    display: flex;
+    gap: 30px;
+    align-items: center;
+    flex-wrap: nowrap;
+}
+.Menu_wrap1 ul li{
+    list-style: none;
+    display: flex;
+    text-align: center;
+    font-size: 16px;
+    font-weight: bold;
+    cursor: pointer;
+    color: transparent;
+    font-family: 'Bruno Ace SC', cursive;
+    background-image: linear-gradient(to right,rgb(72, 72, 217), rgb(72, 72, 217) , rgb(214, 43, 43), #ef75f3, rgb(72, 72, 217),rgb(72, 72, 217)) ;
+    -webkit-background-size: 1000%;
+    -webkit-background-clip: text;
+    animation: animate 5s linear infinite;
+    transition: 0.75s;
+}
+.Menu_wrap1 ul li:hover{
+    color: white;
+    border-style: solid;
+    border-top: none;
+    border-left: none;
+    border-right: none;
+    border-color: white;
+    padding-bottom:23px;
+    margin-top: 23px;
+}
+.Menu_wrap1 ul li:hover .menu_down1{
+    top: 100%;
+    z-index: 0;
+}
+.Menu_wrap1 ul li:hover .menu_down1 ul{
+    opacity: 1;
+    z-index: 0;
+}
+.menu_down1{
+    position: absolute;
+    transform: translateX(-22px);
+    top:-60%;
+    transition: 0.75s;
+    z-index: 0;
+}
+.menu_down1 ul{
+    display: block;
+    opacity: 0;
+    color:white;
+    background-color: black ;
+    width: max-content;
+    padding: 7%;
+    transition: 0.25s;
+}
+.menu_down1 ul li{
+    color: white;
+    font-size: 20px;
+    padding: 5px;
+}
+.menu_down1 ul li:hover{
+    color: white;
+    padding-bottom:0;
+    margin-top: 0;
+    padding: 5px;
+    border-bottom: none;
+    color: blueviolet;
+}
+.but_menu{
+    height:35px;
+    width: 35px;
+    position: absolute;
+    right: 3% ;
+    background-color: transparent;
+    transition: 0.25s;
+    z-index: 1000;
+}
+.menu_img{
+    width: 100%;
+    height: 100%;
+    z-index: 100;
+}
+.menu_down2{
+    display: block;
+    position: absolute;
+    background-color: black;
+    opacity: 0;
+    top: -500%;
+    left: -200%;
+    width: 140px;
+    height: 135px;
+    justify-content: center;
+    border-radius: 10px;
+    transition: 0.75s;
+    z-index: 0;
+}
+.menu_down2 .menud2{
+    display: block;
+    list-style: none;
+    justify-content: center;
+}
+.menu_down2 .menud2 li{
+    padding:8%;
+    text-align: center;
+}
+.menu_option_wrap .menu_option .but_menu:hover{
+    border: none;
+    padding-bottom: 0;
+    margin-top:0;
+}
+.menu_option_wrap .menu_option .but_menu:hover .menu_down2{
+    top: 110%;
+    left: -200%;
+    opacity: 1;
+}
+.menu_option_wrap .menu_option .but_menu ul li:hover{
+    color: white;
+    border: none;
+    padding-bottom: 0;
+    margin-top:0px;
+    margin-bottom: 7px;
+}
+.Menu_wrap ul{
+    list-style: none;
+    display: flex;
+    gap: 30px;
+    align-items: center;
+    flex-wrap: nowrap;
+}
+.Menu_wrap ul li{
+    list-style: none;
+    display: flex;
+    text-align: center;
+    font-size: 16px;
+    font-weight: bold;
+    cursor: pointer;
+    color: transparent;
+    font-family: 'Bruno Ace SC', cursive;
+    background-image: linear-gradient(to right,rgb(72, 72, 217), rgb(72, 72, 217) , rgb(214, 43, 43), #ef75f3, rgb(72, 72, 217),rgb(72, 72, 217)) ;
+    -webkit-background-size: 1000%;
+    -webkit-background-clip: text;
+    animation: animate 5s linear infinite;
+    transition: 0.75s;
+}
+@keyframes animate{
+    0%{
+        background-position: 0 50%;
+    }
+    50%{
+        background-position: 50% 100%;
+    }
+    100%{
+        background-position: 100% 0%;
+    }
+
+}
+.Menu_wrap ul li:hover{
+    color: white;
+    border-style: solid;
+    border-top: none;
+    border-left: none;
+    border-right: none;
+    border-color: white;
+    padding-bottom:23px;
+    margin-top: 23px;
+}
+.Menu_wrap ul li:hover .menu_down{
+    top: 100%;
+    z-index: 0;
+}
+.Menu_wrap ul li:hover .menu_down ul{
+    opacity: 1;
+    z-index: 0;
+}
+.menu_down{
+    position: absolute;
+    transform: translateX(-22px);
+    top:-60%;
+    transition: 0.75s;
+    z-index: 0;
+}
+.menu_down ul{
+    display: block;
+    opacity: 0;
+    color:white;
+    background-color: black ;
+    width: max-content;
+    padding: 7%;
+    transition: 0.25s;
+}
+.menu_down ul li{
+    color: white;
+    font-size: 20px;
+    padding: 5px;
+}
+.menu_down ul li:hover{
+    color: white;
+    padding-bottom:0;
+    margin-top: 0;
+    padding: 5px;
+    border-bottom: none;
+    color: blueviolet;
+}
+.video_background{
+    position: fixed;
+    right: 0;
+    bottom: 0;
+    z-index: -1;
+    transition: 0.25s;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    background-position: center;
+}
+.content1{
+    display: flex;
+    width: 100%;
+    height: 100%;
+    justify-content: center;
+    align-items: center;
+}
+.text_onvid{
+    text-align: center;
+    position: absolute;
+    top: 35%;
+}
+.header1{
+    font-size: 100px;
+    font-weight: bold;
+    color:transparent;
+    background-image: linear-gradient(to right,rgb(72, 72, 217), rgb(72, 72, 217) , rgb(214, 43, 43), #ef75f3, rgb(72, 72, 217),rgb(72, 72, 217)) ;
+    -webkit-background-size: 1000%;
+    -webkit-background-clip: text;
+    animation: animate 5s linear infinite;
+    transition: 0.75s;
+    font-family: 'Bruno Ace SC', cursive;
+    text-shadow: 0px 0px 40px rgb(24, 72, 230);
+}
+.text1{
+    font-size: 50px;
+    font-family: 'Bruno Ace SC', cursive;
+    color: white;
+    text-shadow: 0px 0px 40px white;
+    transition: 0.75s;
+}
+.wrap_text2{
+    padding: 0 15%;
+    text-align: center;
+    transition: 0.25s;
+}
+.text2{
+    font-size: 30px;
+    font-family: 'Bruno Ace SC', cursive;
+    color: white;
+    text-shadow: 0px 0px 40px white;
+    transition: 0.25s;
+}
+.wrap_text3{
+    padding: 0 10%;
+    text-align: center;
+    transition: 0.25s;
+}
+.text3{
+    font-size: 30px;
+    font-family: 'Bruno Ace SC', cursive;
+    color: white;
+    text-shadow: 0px 0px 40px white;
+    transition: 0.25s;
+}
+.but_store{
+    width: 130px;
+    height: 40px;
+    font-size: 18px;
+    color: white;
+    background-color: blue;
+    border-radius: 5px;
+    border-style: none;
+    font-family: 'Bruno Ace SC', cursive;
+    transition: 0.25s;
+}
+.but_store:hover{
+    background-color: white;
+    color: blue;
+}
+.line{
+    margin: 0 auto;
+    width: 7px;
+    height: 300px;
+    transition: 0.75s;
+    background-image: linear-gradient(to bottom,transparent,transparent,transparent,transparent,transparent,transparent,white, white,transparent,transparent,white,white,transparent,transparent) ;
+    -webkit-background-size: 1000%;
+    -webkit-background-clip:content-box;
+    animation: anima 2.5s linear infinite;
+    border-radius: 15px;
+}
+@keyframes anima{
+    0%{
+        background-position: 0 100%;
+    }
+    100%{
+        background-position: 100% 0%;
+    }
+
+}
+.content2{
+    background-color: black;
+    display: block;
+    width: 100%;
+    align-items: center;
+    justify-content:space-around;
+    padding: 6%;
+}
+.headallct1{
+    margin-top: -4%;
+    margin-bottom: 6%;
+    opacity: 1;
+    transition: 0.35s;
+    font-weight: bold;
+    color:transparent;
+    background-image: linear-gradient(to right,rgb(72, 72, 217), rgb(72, 72, 217) , rgb(214, 43, 43), #ef75f3, rgb(72, 72, 217),rgb(72, 72, 217)) ;
+    -webkit-background-size: 1000%;
+    -webkit-background-clip: text;
+    animation: animate 5s linear infinite;
+    transition: 0.75s;
+    font-family: 'Bruno Ace SC', cursive;
+    text-shadow: 0px 0px 40px rgb(24, 72, 230);
+}
+.wrap_content1{
+    display: flex;
+    justify-items:center;
+    flex-wrap: nowrap;
+    width: 100%;
+    padding: 5%;
+    margin-top: -5%;
+}
+.ct1{
+    z-index: 500;
+}
+.wrap_content2{
+    display: block;
+    justify-items:center;
+    flex-wrap: nowrap;
+    width: 100%;
+    padding: 5%;
+    margin-top: -5%;
+}
+.box_content1{
+    display: block;
+    transition: 0.75s;
+}
+.box_content2{
+    display: block;
+    transition: 0.35s;
+}
+.wrap_img2{
+    transition: 0.75s;
+}
+.line_bet1{
+    background-color: white;
+    width: 5px;
+    height: 330px;
+    border-radius: 10px;
+    transition: 1s;
+    margin: auto 0;
+}
+.text_ct1{
+    color: white;
+    padding: 3%;
+    width: 100%;
+    display: block;
+    font-size: 20px;
+    font-family: 'Kanit', sans-serif;
+    transition: 0.75s;
+}
+.headct1{
+    font-size: 35px;
+    font-weight: bold;
+    color:transparent;
+    background-image: linear-gradient(to right,rgb(72, 72, 217), rgb(72, 72, 217) , rgb(214, 43, 43), #ef75f3, rgb(72, 72, 217),rgb(72, 72, 217)) ;
+    -webkit-background-size: 1000%;
+    -webkit-background-clip: text;
+    animation: animate 5s linear infinite;
+    transition: 0.75s;
+    font-family: 'Bruno Ace SC', cursive;
+    text-shadow: 0px 0px 40px rgb(24, 72, 230);
+}
+.img1{
+    border-style: solid;
+    border-radius: 20px;
+    border-color: white;
+    border-width: 0px;
+    image-rendering: optimizeQuality  ;
+    transition: 0.75s;
+}
+.tct2{
+    color: white;
+    font-size: 20px;
+    transition: 0.75s;
+}
+.line_bet2{
+    margin: 0 auto;
+    background-color: white;
+    /* width: 100%; */
+    height: 3px;
+    border-radius: 10px;
+    margin-top: 10px;
+    margin-bottom: 20px;
+    transition: 2s;
+}
+.text4{
+    color: white;
+}
+.wrap_content3{
+    display: flex;
+    justify-content: center;
+    flex-wrap: nowrap;
+    align-items: center;
+    backdrop-filter: blur(30px);
+}
+.wrap_3D_box{
+    margin-left: -25%;
+    margin-right: -10%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    perspective: 10000px;
+    opacity: 0;
+    transition: 0.75s;
+}
+.box{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transform-style: preserve-3d;
+    animation: infinite around 30s;
+    /* transform: rotateX(90deg); */
+}
+.left{
+    transform: rotateY(-90deg) translateZ(-300px) translateX(-25px);
+    transition: 0.75s;
+    image-rendering: pixelated;
+}
+.center{
+    transition: 0.75s;
+    transform: translateX(275px);
+    image-rendering: pixelated;
+}
+.right{
+    transform: rotateY(90deg) translateX(22px)translateZ(250px);
+    image-rendering: pixelated;
+}
+.back{
+    transform: rotateY(180deg) translateZ(48px) translateX(190px);
+    image-rendering: pixelated;
+    transition: 0.75s;
+}
+.bottom{
+    image-rendering: pixelated;
+    background-color: white;
+    height:500px;
+    width:70px;
+    transform: rotateY(90deg) rotateX(-90deg) translateX(25px) translateY(444px) translateZ(320px);
+    opacity: 1;
+    filter:blur(70px);
+    box-shadow: 0px 0px 70px white;
+}
+@keyframes around {
+    0%{
+        transform: rotateY(0deg);
+    }
+    100%{
+        transform: rotateY(720deg);
+    }
+}
+.ct3{
+    color: white;
+}
+.line_bet3{
+    background-color: white;
+    margin: auto 0;
+    position: relative;
+    width: 2px;
+    height: 400px;
+    border-radius: 10px;
+    transform: translateX(-45px);
+    transition: 1s;
+}
+.wrap_tct3{
+    justify-content: center;
+    align-items: center;
+}
+.head_ct3{
+    font-size: 35px;
+    font-weight: bold;
+    color:transparent;
+    background-image: linear-gradient(to right,rgb(72, 72, 217), rgb(72, 72, 217) , rgb(214, 43, 43), #ef75f3, rgb(72, 72, 217),rgb(72, 72, 217)) ;
+    -webkit-background-size: 1000%;
+    -webkit-background-clip: text;
+    animation: animate 5s linear infinite;
+    transition: 0.75s;
+    font-family: 'Bruno Ace SC', cursive;
+    text-shadow: 0px 0px 40px rgb(24, 72, 230);
+}
+.tct3{
+    font-size: 20px;
+    margin-top: 2%;
+}
+.wrap_content4{
+    display: flex;
+    color:white;
+    justify-content: center;
+    align-items: center;
+    padding: 10%;
+    margin-top: 70px;
+    transition: 0.75s;
+    /* box-shadow: 0px 0px 100px white; */
+}
+.ct4_1{
+    padding: 5%;
+}
+.vid_cal{
+    position: relative;
+    width: 500px;
+    border-radius:10px ;
+    box-shadow: 0px 0px 50px white;
+    margin-bottom: 100px;
+    transform: translateX(130px);
+}
+.vid_god{
+    width: 500px;
+    box-shadow: 0px 0px 70px white;
+    margin-top: 40px;
+    border-radius:15px ;
+    transform: translateX(-130px) translateY(-20px);
+    z-index: 100;
+}
+.text_vid_cal{
+    position: relative;
+    transform: translateX(10px) translateY(-70px);
+    font-size: 35px;
+    font-weight: bold;
+    color:transparent;
+    background-image: linear-gradient(to right,rgb(72, 72, 217), rgb(72, 72, 217) , rgb(214, 43, 43), #ef75f3, rgb(72, 72, 217),rgb(72, 72, 217)) ;
+    -webkit-background-size: 1000%;
+    -webkit-background-clip: text;
+    animation: animate 5s linear infinite;
+    transition: 0.75s;
+    font-family: 'Bruno Ace SC', cursive;
+    text-shadow: 0px 0px 40px rgb(24, 72, 230);
+}
+.text_vid_cal1{
+    position: relative;
+    transform:translateY(-20px) translateX(30px);
+    font-size: 35px;
+    font-weight: bold;
+    color:transparent;
+    background-image: linear-gradient(to right,rgb(72, 72, 217), rgb(72, 72, 217) , rgb(214, 43, 43), #ef75f3, rgb(72, 72, 217),rgb(72, 72, 217)) ;
+    -webkit-background-size: 1000%;
+    -webkit-background-clip: text;
+    animation: animate 5s linear infinite;
+    transition: 0.75s;
+    font-family: 'Bruno Ace SC', cursive;
+    text-shadow: 0px 0px 40px rgb(24, 72, 230);
+}
+.ct4_2{
+    padding: 5%;
+}
+.wrap_content5{
+    transition: 2s;
+    display: flex;
+    justify-content: center;
+    align-items: center ;
+    padding: 10%;
+    margin-top: 30px;
+}
+.ct5{
+    justify-content: center;
+    align-items: center;
+    display: block;
+}
+.line_bet4{
+    transition: 2s;
+    position: relative;
+    transform: translateY(10px);
+    width: 70%;
+    height: 3px;
+    background-color: white;
+    border-radius: 10px;
+    margin: 0 auto;
+}
+.line_bet5{
+    transition: 2s;
+    position: relative;
+    transform: translateY(10px);
+    width: 70%;
+    height: 3px;
+    background-color: white;
+    border-radius: 10px;
+    margin: 0 auto;
+}
+.head_ct5{
+    font-weight: bold;
+    color:transparent;
+    background-image: linear-gradient(to right,rgb(72, 72, 217), rgb(72, 72, 217) , rgb(214, 43, 43), #ef75f3, rgb(72, 72, 217),rgb(72, 72, 217)) ;
+    -webkit-background-size: 1000%;
+    -webkit-background-clip: text;
+    animation: animate 5s linear infinite;
+    transition: 0.75s;
+    font-family: 'Bruno Ace SC', cursive;
+    text-shadow: 0px 0px 40px rgb(24, 72, 230);
+    margin-bottom: 20px;
+}
+.let_go_btn{
+    width: 150px;
+    height: 40px;
+    background-color:blue;
+    color: white;
+    font-size: 16px;
+    font-family: 'Bruno Ace SC', cursive;
+    border-style: solid;
+    border-radius: 10px;
+    font-weight: bold;
+    transition: 0.75s;
+}
+.let_go_btn:hover{
+    background-color:white;
+    color:blue;
+    cursor: pointer;
+}
+.wrap_inf_ct{
+    padding-top: 20%;
+    display: flex;
+    justify-content: center;
+    width: 100%;
+}
+.info_ct{
+    display:flex;
+}
+.inf{
+    text-align: left;
+    color: white;
+}
+.inf_mid{
+    margin-left: 250px;
+    margin-right: 250px;
+    text-align: left;
+    color: white;
+}
+.link{ 
+    font-weight: bold;
+    color:white;
+    font-size: 20px;
+    text-decoration: none;
+    font-family: 'Bruno Ace SC', cursive;
+    transition: 0.25s;
+}
+.link1{
+    text-decoration: none;
+    align-items: center;
+}
+.link:hover{ 
+    outline: 0;
+    border-style: solid;
+    border-color: white;
+    border-width: 2px;
+    border-top:none;
+    border-right: none;
+    border-left: none;
+}
+.img_yt{
+    margin-top: -10px;
+}
+.head_inf{
+    font-size: 25px;
+    font-weight: bold;
+    color:transparent;
+    background-image: linear-gradient(to right,rgb(72, 72, 217), rgb(72, 72, 217) , rgb(214, 43, 43), #ef75f3, rgb(72, 72, 217),rgb(72, 72, 217)) ;
+    -webkit-background-size: 1000%;
+    -webkit-background-clip: text;
+    animation: animate 5s linear infinite;
+    transition: 0.75s;
+    font-family: 'Bruno Ace SC', cursive;
+    text-shadow: 0px 0px 40px rgb(24, 72, 230);
+    margin-bottom: -15px;
+}
+.wrap_footer{
+    background-color: white;
+    display: block;
+    padding: 5%;
+    justify-content:space-between;
+    align-items: center;
+    width: 100%;
+}
+.footer{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.contact_head{
+    font-weight: bold;
+    color:transparent;
+    background-image: linear-gradient(to right,rgb(72, 72, 217), rgb(72, 72, 217) , rgb(214, 43, 43), #ef75f3, rgb(72, 72, 217),rgb(72, 72, 217)) ;
+    -webkit-background-size: 1000%;
+    -webkit-background-clip: text;
+    animation: animate 5s linear infinite;
+    transition: 0.75s;
+    font-family: 'Bruno Ace SC', cursive;
+    text-shadow: 0px 0px 40px rgb(24, 72, 230);
+}
+.contact{
+    color: black;
+    font-size: 20px;
+}
+.logo_web{
+    margin-left: -100px;
+}
+.link_ct{
+    text-decoration: none;
+    color: black
+}
+.con1{
+    margin-top: 40px;
+}
+.contact_inf{
+    margin-left: -100px;
+    position: relative;
+    text-align: left;
+    width: 400px;
+    word-wrap: none;
+}
+.wrap_link_page{
+    text-align: left;
+    display: block;
+    width: 150px;
+}
+.link_to_page{
+    font-size: 20px;
+    text-decoration: none;
+    font-weight: bold;
+    color:transparent;
+    background-image: linear-gradient(to right,rgb(72, 72, 217), rgb(72, 72, 217) , rgb(214, 43, 43), #ef75f3, rgb(72, 72, 217),rgb(72, 72, 217)) ;
+    -webkit-background-size: 1000%;
+    -webkit-background-clip: text;
+    animation: animate 5s linear infinite;
+    transition: 0.75s;
+    font-family: 'Bruno Ace SC', cursive;
+    text-shadow: 0px 0px 40px rgb(24, 72, 230);
+}
+.link_to{
+    color: white;
+    padding-bottom:0;
+    margin-top: 0;
+    padding: 5px;
+    border-bottom: none;
+    color: blueviolet;
+}
+.wrap_head_sup{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 3%;
+}
+.head_sup{
+    margin-bottom: 20px;
+    font-size: 40px;
+    font-weight: bold;
+    color:transparent;
+    background-image: linear-gradient(to right,rgb(72, 72, 217), rgb(72, 72, 217) , rgb(214, 43, 43), #ef75f3, rgb(72, 72, 217),rgb(72, 72, 217)) ;
+    -webkit-background-size: 1000%;
+    -webkit-background-clip: text;
+    animation: animate 5s linear infinite;
+    transition: 0.75s;
+    font-family: 'Bruno Ace SC', cursive;
+    text-shadow: 0px 0px 40px rgb(24, 72, 230);
+}
+.sup_wrap_ct1{
+    position: relative;
+    display: flex;
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+    transform: translateY(85px);
+}
+.sup_ct1{
+    display: block;
+    background-color: transparent;
+    padding: 5%;
+    justify-content: center;
+    align-items: center;
+    border-radius: 20px;
+    border-style: solid;
+    border-color:black;
+    border-width: 1.5px;
+    backdrop-filter: blur(30px);
+}
+.sup_form{
+    display: block;
+    justify-content: center;
+    align-items: center;
+    
+}
+.mail{
+    display: block;
+}
+.in_email{
+    width: 300px;
+    height: 30px;
+    font-size: 17px;
+    background-color: transparent;
+    border-style: solid;
+    border-color: white;
+    border-top: none;
+    border-left: none;
+    border-right: none;
+    color: white;
+    outline: 0;
+}
+.in_email::placeholder{
+    font-size: 17px;
+    font-family: 'Bruno Ace SC', cursive;
+    color: white;
+}
+.in_email:focus~.Email{
+    transform: translateX(-300px) translateY(-20px);
+    opacity: 1;
+}
+.Email{
+    position: absolute;
+    transform: translateX(-300px) translateY(3px);
+    font-size: 17px;
+    transition: 0.75s;
+    font-weight: bold;
+    color:transparent;
+    background-image: linear-gradient(to right,rgb(72, 72, 217), rgb(72, 72, 217) , rgb(214, 43, 43), #ef75f3, rgb(72, 72, 217),rgb(72, 72, 217)) ;
+    -webkit-background-size: 1000%;
+    -webkit-background-clip: text;
+    animation: animate 5s linear infinite;
+    transition: 0.75s;
+    font-family: 'Bruno Ace SC', cursive;
+    text-shadow: 0px 0px 40px rgb(24, 72, 230);
+    opacity: 0;
+}
+.video_background1{
+    position: fixed;
+    right: 0;
+    bottom: 0;
+    z-index: -1;
+    transition: 0.25s;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    background-position: center;
+}
+.Menu_wrap1{
+    position: fixed;
+}
+.Fi_name{
+    display: block;
+    margin-top: 3px;
+}
+.f_name{
+    width: 300px;
+    height: 30px;
+    font-size: 17px;
+    background-color: transparent;
+    border-style: solid;
+    border-color: white;
+    border-top: none;
+    border-left: none;
+    border-right: none;
+    color: white;
+    outline: 0;
+}
+.f_name::placeholder{
+    font-size: 17px;
+    font-family: 'Bruno Ace SC', cursive;
+    color: white;
+}
+.fn{
+    position: absolute;
+    transform: translateX(-300px) translateY(3px);
+    width: 200px;
+    font-size: 17px;
+    transition: 0.75s;
+    font-weight: bold;
+    color:transparent;
+    background-image: linear-gradient(to right,rgb(72, 72, 217), rgb(72, 72, 217) , rgb(214, 43, 43), #ef75f3, rgb(72, 72, 217),rgb(72, 72, 217)) ;
+    -webkit-background-size: 1000%;
+    -webkit-background-clip: text;
+    animation: animate 5s linear infinite;
+    transition: 0.75s;
+    font-family: 'Bruno Ace SC', cursive;
+    text-shadow: 0px 0px 40px rgb(24, 72, 230);
+    opacity: 0;
+}
+.f_name:focus~.fn{
+    transform: translateX(-300px) translateY(-20px);
+    opacity: 1;
+}
+.La_name{
+    display: block;
+    justify-content: center;
+    align-items: center;
+}
+.l_name{
+    width: 300px;
+    height: 30px;
+    font-size: 17px;
+    background-color: transparent;
+    border-style: solid;
+    border-color: white;
+    border-top: none;
+    border-left: none;
+    border-right: none;
+    color: white;
+    outline: 0;
+}
+.l_name::placeholder{
+    font-size: 17px;
+    font-family: 'Bruno Ace SC', cursive;
+    color: white;
+}
+.ln{
+    position: absolute;
+    transform: translateX(-300px) translateY(3px);
+    width: 200px;
+    font-size: 17px;
+    transition: 0.75s;
+    font-weight: bold;
+    color:transparent;
+    background-image: linear-gradient(to right,rgb(72, 72, 217), rgb(72, 72, 217) , rgb(214, 43, 43), #ef75f3, rgb(72, 72, 217),rgb(72, 72, 217)) ;
+    -webkit-background-size: 1000%;
+    -webkit-background-clip: text;
+    animation: animate 5s linear infinite;
+    transition: 0.75s;
+    font-family: 'Bruno Ace SC', cursive;
+    text-shadow: 0px 0px 40px rgb(24, 72, 230);
+    opacity: 0;
+}
+.l_name:focus~.ln{
+    transform: translateX(-300px) translateY(-20px);
+    opacity: 1;
+}
+.mes{
+    display: block;
+    margin-top: 11%;
+}
+.Mes{
+    min-width: 300px;
+    min-height: 100px;
+    background-color: transparent;
+    border-radius: 10px;
+    border-color: white;
+    padding: 10px;
+    outline: 0;
+    font-size: 17px ;
+    color: white;
+}
+.Mes::placeholder{
+    font-size: 17px;
+    font-family: 'Bruno Ace SC', cursive;
+    color: white;
+}
+.MES{
+    position: absolute;
+    transform: translateX(-289px) translateY(11px);
+    width: 200px;
+    font-size: 17px;
+    transition: 0.75s;
+    font-weight: bold;
+    color:transparent;
+    background-image: linear-gradient(to right,rgb(72, 72, 217), rgb(72, 72, 217) , rgb(214, 43, 43), #ef75f3, rgb(72, 72, 217),rgb(72, 72, 217)) ;
+    -webkit-background-size: 1000%;
+    -webkit-background-clip: text;
+    animation: animate 5s linear infinite;
+    transition: 0.75s;
+    font-family: 'Bruno Ace SC', cursive;
+    text-shadow: 0px 0px 40px rgb(24, 72, 230);
+    opacity: 0;
+}
+.Mes:focus~.MES{
+    transform: translateX(-300px) translateY(-26px);
+    opacity: 1;
+}
+.wrap_send{
+    display: flex;
+    justify-content: center;
+    align-content: center;
+}
+.send_box{
+    margin-top: 25px;
+    margin-bottom: -15px;
+}
+.send_but{
+    height: 33px;
+    width: 90px;
+    font-size: 19px;
+    font-family: 'Bruno Ace SC', cursive;
+    border-style: solid;
+    border-color: transparent;
+    background-color: blue;
+    color: white;
+    border-radius: 10px;
+    transition: 0.75s;
+}
+.send_but:hover{
+    background-color: white;
+    color: blue;
+    font-family: 'Bruno Ace SC', cursive;
+    box-shadow: 0px 0px 30px;    
+}
+.check_wrap{
+    display: block;
+    margin-top: 15px;
+    align-items: center;
+    justify-content: center;
+}
+.check{
+    width: 20px;
+    height: 20px;
+    border-style: solid;
+    border-color: transparent;
+}
+.show{
+    font-size: 20px;
+    font-weight: bold;
+    color:transparent;
+    background-image: linear-gradient(to right,rgb(72, 72, 217), rgb(72, 72, 217) , rgb(214, 43, 43), #ef75f3, rgb(72, 72, 217),rgb(72, 72, 217)) ;
+    -webkit-background-size: 1000%;
+    -webkit-background-clip: text;
+    animation: animate 5s linear infinite;
+    transition: 0.75s;
+    font-family: 'Bruno Ace SC', cursive;
+    text-shadow: 0px 0px 40px rgb(24, 72, 230);
+}
+.sup_wrap_ct2{
+    position: relative;
+    display: flex;
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+    transform: translateY(130px);
+}
